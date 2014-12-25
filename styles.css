@@ -9,7 +9,11 @@
 }
 
 .tabs {
-	padding: 15px 15px 15px 15px;
+	padding: 15px 15px 10px 15px;
+}
+
+#pagination {
+	margin: 15px;
 }
 
 #no-more-tables {
@@ -34,6 +38,11 @@ http://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table
 		display: block;
 	}
 
+	#no-more-tables table {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
 	/* Hide table headers (but not display: none;, for accessibility) */
 	#no-more-tables thead tr {
 		position: absolute;
@@ -41,7 +50,12 @@ http://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table
 		left: -9999px;
 	}
 
-	#no-more-tables tr { border: 1px solid #ccc; }
+	#no-more-tables tr {
+		border: 1px solid #ccc;
+		width: auto;
+		margin-bottom: 10px;
+
+	}
 
 	#no-more-tables td {
 		/* Behave  like a "row" */
@@ -69,5 +83,7 @@ http://bootsnipp.com/snippets/featured/no-more-tables-respsonsive-table
 	/*
 	Label the data
 	*/
-	#no-more-tables td:before { content: attr(data-title); }
+	#no-more-tables td:before {
+		content: attr(data-title);
+	}
 }
