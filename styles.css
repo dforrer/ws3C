@@ -1,24 +1,26 @@
 /* Side notes for calling out things
 -------------------------------------------------- */
 
+.margins {
+	margin: 20px;
+}
+
 /* Base styles (regardless of theme) */
-.bs-callout {
-	margin: 15px;
+.search-field {
 	padding: 15px 30px 15px 15px;
 	border: 1px solid #eee;
 }
 
 .tabs {
-	padding: 15px 15px 10px 15px;
-}
-
-#pagination {
-	margin: 15px;
+	margin-bottom: 10px;
 }
 
 #no-more-tables {
-	margin: 15px 15px;
 	margin-top: 0;
+}
+
+#no-more-tables thead tr {
+	background-color: #f2dede;
 }
 
 /*
