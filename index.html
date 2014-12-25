@@ -8,6 +8,7 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,53 +28,80 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><b>Workshop 3</b></a>
+      <a class="navbar-brand" href="#"><b>Datascraper</b></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Workspace</a></li>
+        <li><a href="#">Blacklist</a></li>
+        <li><a href="#">New Ad</a></li>
+        <li><a href="#">Konfiguration</a></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div style="margin:30px">
-<h1>Hello, world!</h1>
-<p>This is it.</p>
+
+
+
+<div class="bs-callout bs-callout-info" id="callout-glyphicons-location">
+  <div class="input-group">
+    <span class="input-group-addon">Suche</span>
+    <input type="text" class="form-control" placeholder="Bezeichnung, Ort, PLZ, etc.">
+  </div>
+  <div style="margin: 15px 0px 15px 0px;">
+    <input type="checkbox">
+    <span>Alle Regionen</span>
+  </div>
+  <div style="max-width: 500px; margin: 0px 0px 0px 30px;">
+    <div class="row">
+      <div class="col-sm-3">
+        <input type="checkbox">
+        <span>Aargau</span>
+      </div>
+      <div class="col-sm-3">
+        <input type="checkbox">
+        <span>Baselland</span>
+      </div>
+      <div class="col-sm-3">
+        <input type="checkbox">
+        <span>Baselstadt</span>
+      </div>
+      <div class="col-sm-3">
+        <input type="checkbox">
+        <span>Solothurn</span>
+      </div>
+      <div class="col-sm-3">
+        <input type="checkbox">
+        <span>Zürich</span>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+<div class="tabs">
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Alle</a></li>
+    <li role="presentation"><a href="#">Neu</a></li>
+    <li role="presentation"><a href="#">Kontaktiert</a></li>
+    <li role="presentation"><a href="#">Reminder</a></li>
+  </ul>
+</div>
+
+
+
+<div class="bs-callout bs-callout-danger" id="callout-glyphicons-dont-mix">
+  <h4>Don't mix with other components</h4>
+  <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</p>
+</div>
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
