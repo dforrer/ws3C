@@ -1,8 +1,12 @@
 /* Side notes for calling out things
 -------------------------------------------------- */
 
-.margins {
+h1, h4, .margins {
 	margin: 20px;
+}
+
+.dashboard-item {
+	margin-bottom: 10px;
 }
 
 /* Base styles (regardless of theme) */

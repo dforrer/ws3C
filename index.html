@@ -28,13 +28,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><b>Datascraper</b></a>
+      <a class="navbar-brand" href="index.html"><b>Datascraper</b></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Workspace <span class="sr-only">(current)</span></a></li>
+        <li><a href="workspace.html">Workspace</a></li>
         <li><a href="#">Blacklist</a></li>
         <li><a href="#">Neues Inserat</a></li>
         <li><a href="#">Konfiguration</a></li>
@@ -47,186 +47,214 @@
 </nav>
 
 
+<h1>Dashboard</h1>
 
-<div class="search-field margins" id="callout-glyphicons-location">
-  <div class="input-group">
-    <span class="input-group-addon">Suche</span>
-    <input type="text" class="form-control" placeholder="Bezeichnung, Ort, PLZ, etc.">
-  </div>
-  <div style="margin: 15px 0px 15px 0px;">
-    <input type="checkbox">
-    <span>Alle Regionen</span>
-  </div>
-  <div style="max-width: 500px; margin: 0px 0px 0px 30px;">
+<h4>Neue Inserate</h4>
+<div class="search-field margins">
+  <div class="dashboard-item">
     <div class="row">
       <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Aargau</span>
+        <a href="#" class="thumbnail">
+          <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+        </a>
       </div>
-      <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Baselland</span>
+      <div class="col-sm-9">
+        <div id="detail-table">
+          <div class="row">
+            <div class="col-sm-3"><b>Beschreibung:</b></div>
+            <div class="col-sm-5">Einfamilienhaus in ruhiger Lage</div>
+            <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Ort:</b></div>
+            <div class="col-sm-5">Aarau, Kanton Aargau</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Preis:</b></div>
+            <div class="col-sm-5">CHF 1'385'000.-</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Details:</b></div>
+            <div class="col-sm-5"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="dashboard-item">
+    <div class="row">
       <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Baselstadt</span>
+        <a href="#" class="thumbnail">
+          <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+        </a>
       </div>
-      <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Solothurn</span>
+      <div class="col-sm-9">
+        <div id="detail-table">
+          <div class="row">
+            <div class="col-sm-3"><b>Beschreibung:</b></div>
+            <div class="col-sm-5">Einfamilienhaus in ruhiger Lage</div>
+            <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Ort:</b></div>
+            <div class="col-sm-5">Aarau, Kanton Aargau</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Preis:</b></div>
+            <div class="col-sm-5">CHF 1'385'000.-</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Details:</b></div>
+            <div class="col-sm-5"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="dashboard-item">
+    <div class="row">
       <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Zürich</span>
+        <a href="#" class="thumbnail">
+          <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+        </a>
+      </div>
+      <div class="col-sm-9">
+        <div id="detail-table">
+          <div class="row">
+            <div class="col-sm-3"><b>Beschreibung:</b></div>
+            <div class="col-sm-5">Einfamilienhaus in ruhiger Lage</div>
+            <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Ort:</b></div>
+            <div class="col-sm-5">Aarau, Kanton Aargau</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Preis:</b></div>
+            <div class="col-sm-5">CHF 1'385'000.-</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Details:</b></div>
+            <div class="col-sm-5"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+<h4>Inserate mit Preisänderung</h4>
+<div class="search-field margins">
+  <div class="dashboard-item">
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="#" class="thumbnail">
+          <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+        </a>
+      </div>
+      <div class="col-sm-9">
+        <div id="detail-table">
+          <div class="row">
+            <div class="col-sm-3"><b>Beschreibung:</b></div>
+            <div class="col-sm-5">Einfamilienhaus in ruhiger Lage</div>
+            <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Ort:</b></div>
+            <div class="col-sm-5">Aarau, Kanton Aargau</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Preis:</b></div>
+            <div class="col-sm-5">CHF 1'385'000.-</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Details:</b></div>
+            <div class="col-sm-5"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-item">
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="#" class="thumbnail">
+          <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+        </a>
+      </div>
+      <div class="col-sm-9">
+        <div id="detail-table">
+          <div class="row">
+            <div class="col-sm-3"><b>Beschreibung:</b></div>
+            <div class="col-sm-5">Einfamilienhaus in ruhiger Lage</div>
+            <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Ort:</b></div>
+            <div class="col-sm-5">Aarau, Kanton Aargau</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Preis:</b></div>
+            <div class="col-sm-5">CHF 1'385'000.-</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Details:</b></div>
+            <div class="col-sm-5"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-item">
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="#" class="thumbnail">
+          <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+        </a>
+      </div>
+      <div class="col-sm-9">
+        <div id="detail-table">
+          <div class="row">
+            <div class="col-sm-3"><b>Beschreibung:</b></div>
+            <div class="col-sm-5">Einfamilienhaus in ruhiger Lage</div>
+            <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Ort:</b></div>
+            <div class="col-sm-5">Aarau, Kanton Aargau</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Preis:</b></div>
+            <div class="col-sm-5">CHF 1'385'000.-</div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"><b>Details:</b></div>
+            <div class="col-sm-5"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-<div class="tabs margins">
-  <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">Alle</a></li>
-    <li role="presentation"><a href="#">Neu <span class="badge">4</span></a></li>
-    <li role="presentation"><a href="#">Kontaktiert</a></li>
-    <li role="presentation"><a href="#">Erinnerung <span class="badge">12</span></a></li>
-  </ul>
 </div>
-
-
-
-<div id="no-more-tables" class="margins">
-  <table class="col-sm-12 table-bordered table-striped table-condensed cf">
-    <thead class="cf">
-    <tr>
-      <th>Typ</th>
-      <th>Region</th>
-      <th>Ort</th>
-      <th>Kontakt</th>
-      <th>Adresse</th>
-      <th>Letzter Import</th>
-      <th>Details</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td data-title="Typ">Haus</td>
-      <td data-title="Region">Aargau</td>
-      <td data-title="Ort">Aarau</td>
-      <td data-title="Kontakt">M. Maurer</td>
-      <td data-title="Adresse">Neuenfelderstrasse 43, 5003 Aarau</td>
-      <td data-title="Letzter Import">vor 2 Minuten</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Details</a></td>
-    </tr>
-
-    </tbody>
-  </table>
-</div>
-
-
-
-<nav class="margins">
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
 
 <!-- Modal -->
 <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -239,9 +267,9 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-sm-3">
-              <a href="#" class="thumbnail">
-                <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
-              </a>
+            <a href="#" class="thumbnail">
+              <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+            </a>
           </div>
           <div class="col-sm-6">
             <div id="detail-table">
@@ -306,6 +334,7 @@
     </div>
   </div>
 </div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
