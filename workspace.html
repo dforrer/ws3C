@@ -1,311 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ws3C - Buri/Forrer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ws3C - Buri/Forrer</title>
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><b>Datascraper</b></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="workspace.html">Workspace <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Blacklist</a></li>
-        <li><a href="newAd.html">Neues Inserat</a></li>
-        <li><a href="#">Konfiguration</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><b>Abmelden</b></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-
-<div class="search-field margins" id="callout-glyphicons-location">
-  <div class="input-group">
-    <span class="input-group-addon">Suche</span>
-    <input type="text" class="form-control" placeholder="Bezeichnung, Ort, PLZ, etc.">
-  </div>
-  <div style="margin: 15px 0 15px 0;">
-    <input type="checkbox">
-    <span>Alle Regionen</span>
-  </div>
-  <div style="max-width: 500px; margin: 0 0 0 30px;">
-    <div class="row">
-      <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Aargau</span>
-      </div>
-      <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Baselland</span>
-      </div>
-      <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Baselstadt</span>
-      </div>
-      <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Solothurn</span>
-      </div>
-      <div class="col-sm-3">
-        <input type="checkbox">
-        <span>Zürich</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="tabs margins">
-  <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">Alle</a></li>
-    <li role="presentation"><a href="#">Neu <span class="badge">4</span></a></li>
-    <li role="presentation"><a href="#">Kontaktiert</a></li>
-    <li role="presentation"><a href="#">Erinnerung <span class="badge">12</span></a></li>
-  </ul>
-</div>
-
-
-
-<div id="no-more-tables" class="margins">
-  <table class="col-sm-12 table-bordered table-striped table-condensed cf">
-    <thead class="cf">
-    <tr>
-      <th>Typ</th>
-      <th>Region</th>
-      <th>Ort</th>
-      <th>Kontakt</th>
-      <th>Adresse</th>
-      <th>Letzter Import</th>
-      <th>Details</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td data-title="Typ">Haus</td>
-      <td data-title="Region">Aargau</td>
-      <td data-title="Ort">Aarau</td>
-      <td data-title="Kontakt">M. Maurer</td>
-      <td data-title="Adresse">Neuenfelderstrasse 43, 5003 Aarau</td>
-      <td data-title="Letzter Import">vor 2 Minuten</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-    <tr>
-      <td data-title="Typ">Wohnung</td>
-      <td data-title="Region">Solothurn</td>
-      <td data-title="Ort">Olten</td>
-      <td data-title="Kontakt">Will Smith</td>
-      <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
-      <td data-title="Letzter Import">vor 4 Tagen</td>
-      <td data-title="Details"><a href="#"  data-toggle="modal" data-target="#myModal">Ansehen</a></td>
-    </tr>
-
-    </tbody>
-  </table>
-</div>
-
-
-
-<nav class="margins">
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-
-<!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">ID1492 - Einmalig - Grosszügig - Individuell - Stadtnah und doch im Grünen</h4>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-3">
-              <a href="#" class="thumbnail">
-                <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
-              </a>
-          </div>
-          <div class="col-sm-6">
-            <div id="detail-table">
-              <div class="row">
-                <div class="col-sm-3"><b>Adresse:</b></div>
-                <div class="col-sm-5">Jäucherstrasse 3, 8966 Oberwil-Lieli, AG</div>
-                <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-3"><b>Zimmer:</b></div>
-                <div class="col-sm-5">4.5</div>
-                <div class="col-sm-4"></div>
-              </div>
-              <div class="row">
-                <div class="col-sm-3"><b>Fläche:</b></div>
-                <div class="col-sm-5">231 m&sup2;</div>
-                <div class="col-sm-4"></div>
-              </div>
-              <div class="row">
-                <div class="col-sm-3"><b>Verfügbar:</b></div>
-                <div class="col-sm-5">per sofort</div>
-                <div class="col-sm-4"></div>
-              </div>
-              <div class="row">
-                <div class="col-sm-3"><b>Preis:</b></div>
-                <div class="col-sm-5">CHF 1'385'000.-</div>
-                <div class="col-sm-4"></div>
-              </div>
-              <div class="row">
-                <div class="col-sm-3"><b>Portal:</b></div>
-                <div class="col-sm-5">Immoscout24 / Homegate / Nabhome</div>
-                <div class="col-sm-4"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="btn-group-vertical" role="group" aria-label="...">
-              <div class="btn-group" role="group">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                  Status
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Neu</a></li>
-                  <li><a href="#">Kontaktiert</a></li>
-                  <li><a href="#">Erinnerung</a></li>
-                  <li><a href="#">Blacklist</a></li>
-                </ul>
-              </div>
-              <button type="button" class="btn btn-default">Gelesen</button>
-              <button type="button" class="btn btn-default">Kontaktieren</button>
-              <button type="button" class="btn btn-default">Bearbeiten</button>
-              <button type="button" class="btn btn-default">Löschen</button>
-            </div>
-          </div>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b>Datascraper</b></a>
         </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="workspace.html">Workspace <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Blacklist</a></li>
+                <li><a href="newAd.html">Neues Inserat</a></li>
+                <li><a href="#">Konfiguration</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><b>Abmelden</b></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-  </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<div class="content">
+    <div class="search-field margins" id="callout-glyphicons-location">
+        <div class="input-group">
+            <span class="input-group-addon">Suche</span>
+            <input type="text" class="form-control" placeholder="Bezeichnung, Ort, PLZ, etc.">
+        </div>
+        <div style="margin: 15px 0 15px 0;">
+            <input type="checkbox">
+            <span>Alle Regionen</span>
+        </div>
+        <div style="max-width: 500px; margin: 0 0 0 30px;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <input type="checkbox">
+                    <span>Aargau</span>
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox">
+                    <span>Baselland</span>
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox">
+                    <span>Baselstadt</span>
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox">
+                    <span>Solothurn</span>
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox">
+                    <span>Zürich</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tabs margins">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Alle</a></li>
+            <li role="presentation"><a href="#">Neu <span class="badge">4</span></a></li>
+            <li role="presentation"><a href="#">Kontaktiert</a></li>
+            <li role="presentation"><a href="#">Erinnerung <span class="badge">12</span></a></li>
+        </ul>
+    </div>
+
+
+    <div id="no-more-tables" class="margins">
+        <table class="col-sm-12 table-bordered table-striped table-condensed cf">
+            <thead class="cf">
+            <tr>
+                <th>Typ</th>
+                <th>Region</th>
+                <th>Ort</th>
+                <th>Kontakt</th>
+                <th>Adresse</th>
+                <th>Letzter Import</th>
+                <th>Details</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-title="Typ">Haus</td>
+                <td data-title="Region">Aargau</td>
+                <td data-title="Ort">Aarau</td>
+                <td data-title="Kontakt">M. Maurer</td>
+                <td data-title="Adresse">Neuenfelderstrasse 43, 5003 Aarau</td>
+                <td data-title="Letzter Import">vor 2 Minuten</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+            <tr>
+                <td data-title="Typ">Wohnung</td>
+                <td data-title="Region">Solothurn</td>
+                <td data-title="Ort">Olten</td>
+                <td data-title="Kontakt">Will Smith</td>
+                <td data-title="Adresse">General Guisonstrassen 21, 4677 Olten</td>
+                <td data-title="Letzter Import">vor 4 Tagen</td>
+                <td data-title="Details"><a href="#" data-toggle="modal" data-target="#myModal">Ansehen</a></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <nav class="margins">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Modal -->
+    <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">ID1492 - Einmalig - Grosszügig - Individuell - Stadtnah
+                        und doch im Grünen</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="#" class="thumbnail">
+                                <img src="img/default.png" alt="" style="height: 100%; width: 100%; display: block;">
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="detail-table">
+                                <div class="row">
+                                    <div class="col-sm-3"><b>Adresse:</b></div>
+                                    <div class="col-sm-5">Jäucherstrasse 3, 8966 Oberwil-Lieli, AG</div>
+                                    <div class="col-sm-4"><b>Kontaktperson:</b><br/>Frau Irene Meier<br/>079 487 12 77
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3"><b>Zimmer:</b></div>
+                                    <div class="col-sm-5">4.5</div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3"><b>Fläche:</b></div>
+                                    <div class="col-sm-5">231 m&sup2;</div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3"><b>Verfügbar:</b></div>
+                                    <div class="col-sm-5">per sofort</div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3"><b>Preis:</b></div>
+                                    <div class="col-sm-5">CHF 1'385'000.-</div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3"><b>Portal:</b></div>
+                                    <div class="col-sm-5">Immoscout24 / Homegate / Nabhome</div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group-vertical" role="group" aria-label="...">
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                                            aria-expanded="false">
+                                        Status
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Neu</a></li>
+                                        <li><a href="#">Kontaktiert</a></li>
+                                        <li><a href="#">Erinnerung</a></li>
+                                        <li><a href="#">Blacklist</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-default">Gelesen</button>
+                                <button type="button" class="btn btn-default">Kontaktieren</button>
+                                <button type="button" class="btn btn-default">Bearbeiten</button>
+                                <button type="button" class="btn btn-default">Löschen</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
